@@ -9,7 +9,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto contém informações sobre mi
 
 Este portfólio foi criado para compartilhar meus projetos e realizações. Ele inclui uma lista de projetos em destaque, uma breve biografia sobre mim e informações sobre minhas habilidades técnicas e criativas.
 
-Você pode visitar meu portfólio online através do GitHub Pages [aqui](https://thiagodouradof.github.io/meu-portfolio/).
+Você pode visitar meu portfólio online através do GitHub Pages [aqui](https://thiagodouradof.github.io/meu-portifolio/).
 
 ## 🚀 Tecnologias Utilizadas
 
