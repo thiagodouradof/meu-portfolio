@@ -1,0 +1,118 @@
+footer {
+    background-image: url("../assets/images/bg-contact.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-color: lightgray 50%;
+    padding: 128px 120px 200px 120px;
+    position: relative;
+    
+    .title p {
+      /*cor titulo purple*/
+      color: var(--main-purple);
+      position: relative;
+      z-index: 10;
+  
+    }
+  
+    h2 {
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 10;
+    }
+  
+    p {
+      font: var(--text-md);
+      color: var(--base-gray-500);
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+  
+    .flex-social { /*lista de redes sociais*/
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-top: 48px;
+    }
+  
+    .flex-social-item {
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+      height: 68px;
+      padding: 20px;
+      border-radius: 8px;
+      background: var(--Base-gray-300, #292C34);
+      z-index: 10;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      &:hover{
+        border-radius: 8px;
+        border: 1.5px solid var(--main-blue);
+        background: var(--base-gray-300);
+      }
+    }
+  
+    .social-name {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      gap:12px;
+  
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  
+  
+  
+    span {
+      color: var(--base-gray-500);
+      font: var(--text-md);
+      font-weight: 500;
+  
+    }
+  
+    img {
+  
+      width: 20px;
+      height: 20px;
+  
+     
+    }
+  
+  }
+
+.pac-man {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  transform-origin: center;
+  animation: mouth-animation 0.5s infinite;
+  z-index: 1 !important;
+}
+
+/* Animação para abrir e fechar a boca */
+@keyframes mouth-animation {
+    0%, 100% {
+        clip-path: polygon(200% 0%, 0% 0%, 0% 200%);
+    }
+    50% {
+        clip-path: polygon(0% 0%,    
+        100% 0%,  
+        100% 0%, 
+        50% 50%,  
+        100% 100%, 
+        100% 100%,
+        0% 100% );
+    }
+
+}

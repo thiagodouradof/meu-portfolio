@@ -1,0 +1,76 @@
+
+main {
+    background-color: var(--base-gray-200);
+    
+  
+  
+    .title p{ 
+    color: var(--main-blue);
+    }
+
+    #yellow {
+      color: var(--main-yellow);
+    }
+  
+    .card {
+      width: 330px;
+      height: 280px;
+      background-color: var(--base-gray-300);
+      border-radius: 12px;
+      padding: 12px 12px;
+  
+      &:hover {
+        border: 1.5px solid var(--base-gray-400);
+      }
+  
+  
+      img {
+        width: 306px;
+        height: 156px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+  
+    }
+  
+    .services {
+      background-color: var(--base-gray-100);
+      padding: 88px 120px 120px 120px;
+      position: relative;
+  
+      .box {
+        width: 280px;
+        padding: 20px;
+        border-radius: 12px;
+        border: 2px solid var(--base-gray-200);
+        
+      }
+      img{
+        width: 30px;
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: 15px;
+      }
+      
+    }
+  
+  }
+
+  .mario {
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    bottom: 0px; 
+    background-image: url('../assets/images/mario.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scaleX(1); 
+    transition: transform 0.3s ease;
+  }
+  
+  /* Animação de pulo */
+  @keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }

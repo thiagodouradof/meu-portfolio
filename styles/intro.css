@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.intro {
+  background-image: url("../assets/images/bg-.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  background-color: lightgray 50%;
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    padding-block: 90px 20px;
+    align-items: center;
+
+    .avatar {
+      position: relative;
+      z-index: 10;
+
+      img {
+        width: 8em;
+        border: 0.2rem solid #fff;
+        border-radius: 2rem;
+        padding: 0.4em;
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #13fe13,
+          0 0 0.8rem #13fe13, 0 0 2.8rem #13fe13, inset 0 0 1.3rem #13fe13;
+      }
+    }
+
+    .icone {
+      position: absolute;
+      bottom: 0;
+      right: 1px;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+
+    p {
+      font: var(--subtitle);
+      color: var(--base-gray-500);
+      margin-bottom: 8px;
+      gap: 12px;
+      margin-top: 40px;
+      z-index: 10;
+
+      span {
+        color: var(--main-green);
+      }
+    }
+
+    h1 {
+      font: var(--title-lg);
+      color: var(--base-gray-600);
+      font-weight: 700;
+      justify-content: center;
+      margin-bottom: 1em;
+      z-index: 10;
+
+      span {
+        animation: pulse 1.5s ease-in-out infinite alternate;
+        color: #13fe13;
+      }
+    }
+
+    h2 {
+      display: flex;
+      font: var(--title-lg2);
+      color: var(--base-gray-600);
+      font-weight: 700;
+      justify-content: center;
+      margin: 0;
+      z-index: 10;
+    }
+
+    h3 {
+      font: var(--text-sm);
+      color: var(--base-gray-400);
+      text-align: center;
+      margin: 20px 80px;
+      z-index: 10;
+    }
+  }
+
+  .badges {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 1em;
+    z-index: 10;
+
+    .content-icons {
+      display: flex;
+      background-color: var(--base-gray-300);
+      border-radius: 999px;
+      padding: 8px 16px;
+      align-items: center;
+      gap: 8px;
+      z-index: 10;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      span {
+        font: var(--text-md);
+        color: var(--base-gray-500);
+      }
+
+      img span {
+        align-self: center;
+      }
+    }
+  }
+
+  .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0px 129px;
+    z-index: 10;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+#game-area {
+  width: 100%; /* Ou um valor fixo, se necessário */
+  /* height: 400px; Exemplo de altura */
+    position: relative; 
+    overflow: hidden;
+}
+
+.snake-segment {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #13fe13;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
