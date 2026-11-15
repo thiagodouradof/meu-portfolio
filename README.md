@@ -1,7 +1,6 @@
 # Meu Portfólio
 
 ![Foto do Portifólio](./github/portifolio1.png)
-![Foto do Portifólio](./github/portifolio2.png)
 
 Bem-vindo ao meu portfólio pessoal! Este projeto contém informações sobre mim, minhas habilidades e alguns dos projetos em que já trabalhei. É também uma vitrine para os trabalhos que desenvolvi nas áreas de desenvolvimento web e análise de dados. A página também contém algumas referências a jogos que gosto muito.
 
